@@ -1,5 +1,10 @@
 name: "Terraform"
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./infra
+
 on:
   push:
     branches:
