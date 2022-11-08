@@ -5,12 +5,13 @@ on:
     branches:
       - main
   pull_request:
-
-jobs:
-defaults:
+  
+  defaults:
   run:
     shell: bash
     working-directory: ./infra
+
+jobs:
   # Builds a new container image, and pushes it on every commit to the repository
   # Also pushes a tag called "latest" to track the lates commit
   terraform:
